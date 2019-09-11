@@ -7,41 +7,43 @@
         rel="stylesheet"/>
         <link href="main.css" rel="stylesheet"/>
     </head>
-    <body background="nature.jpg">
+    <body class="bodyform">
             <div class="center">
                 
                     <h1><span style="text-align: right">My Personal Website</span></h1>
                     <h2><span style="text-align: right">Velix Halim</span></h2>
-                    <img src="doge1.jpg" style="border-radius: 100%; width: 30%;height: 20%; align-content: center" />
+                    <img src="doge1.jpg" alt="doge" />
             </div>
-            <div>
-                <nav class="col-12 padding-16 center" style="display: inline-block">
-                    <li class="col-2"><a href="home.html">Home</a></li>
-                    <li class="col-2"><a href="about.html">About Me</a></li>
-                    <li class="col-2"><a href="form.html">Form</a></li>
-                    <li class="col-2"><a href="collection.html">Collection</a></li>
-                </nav>
-             </div>
-             <hr color="green" width="90%" style="align-self: center">
-             <div>
-                <form style="text-align: center; align-self: center" >
-                    <fieldset>
-                        <legend>Masukkan untuk Saya</legend>
-                           <input type="text" placeholder="Nama Lengkap" size="30"><br/>
-                           <input type="date"><br/>
-                           <input type="radio" name="jenis_kelamin2" value="Laki-laki"/>Laki-laki
-                           <input type="radio" name="jenis_kelamin2" value="Perempuan"/>Perempuan
-                           <br />
-                           <select name="Jurusan" id="select">
-                               <option>Informatika</option>
-                               <option>Management</option>
-                               <option>Akuntansi</option>
-                           </select><br/>
-                           <input type="text" placeholder="Comment">
-                           <textarea rows="4" cols="50">Masukkan</textarea><br/>
-                    </fieldset>
-                </form>
-        </div>
+            <menu class="center col-12 padding-16">
+                    <li ><a href="home.html">Home</a></li>
+                    <li ><a href="about.html">About Me</a></li>
+                    <li ><a href="form.html">Form</a></li>
+                    <li ><a href="collection.html">collection</a></li>
+            </menu>
+             <hr class="green" >
+             <div id="isi">
+                    <form >
+                      <fieldset>
+                      <legend>Form</legend>
+                      <label for="name">Name :</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..."><br/>
+            
+                      <label for="email">Email :</label>
+                      <input type="text" id="email" name="email" placeholder="Your Email..."><br/>
+            
+                      <label for="subject">comment :</label><br/>
+                      <textarea id="subject" name="coment" placeholder="Write the coment..." style="width:1500px;height:200px"></textarea><br/>
+            
+                      <input type="button" onclick="myFunction()" value="Submit"><br/>
+                      </fieldset>
+                    </form>
+            
+                    <script>
+                    function myFunction() {
+                      document.getElementById("isi").reset();
+                    }
+                    </script>
+                  </div>
         <div class="col-12 footer2">
 
                 <p><b>Created by : Velix Halim</b></p>

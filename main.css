@@ -55,7 +55,10 @@
 img{
     max-width:100%;
     height: auto;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    border-radius: 100%;width: 30%;
+    height: 20%;
+    
 }
 
 .padding-8{
@@ -101,13 +104,16 @@ table th{
 
 .footer1{
     text-align: center;
+    padding: 20px; /* Some padding */
+  
+  background: #ddd; /* Grey background */
 }
 
 .col-12 li{
     display: inline-block;
     width: 20%;
     font-weight: bold;
-    background-color: black
+    background-color: black;
 }
 
 .col-12 li a{
@@ -118,4 +124,67 @@ table th{
 .footer2{
     float: right;
     text-align: right;
+    padding: 20px; /* Some padding */
+  
+  background: #ddd; /* Grey background */
+}
+
+hr{
+    width:100%;
+    align-self: center;
+}
+
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+
+.bodyabout{
+    background: url('alam.jpg');
+    background-size:cover;
+			background-attachment: fixed;
+}
+.homebody{
+    background: url('nature.jpg');
+    background-size:cover;
+			background-attachment: fixed;
+}
+
+.bodyform{
+    background: url('nature2.jpg');
+    background-size:cover;
+			background-attachment: fixed;
+}
+
+.bodycollection{
+    background: url('nature3.jpg');
+    background-size:cover;
+			background-attachment: fixed;
+}
+
+/* .img1{
+    background-image: image('doge1.jpg')
+}
+
+.img2{
+    background: url('doge2.jpg')
+}
+.img3{
+    background: url('doge1.jpg')
+}
+.img4{
+    background: url('doge1.jpg')
+} */
+
+#isi{
+    width: 100%;
+    background-color: burlywood;
 }
